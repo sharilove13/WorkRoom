@@ -1,0 +1,141 @@
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/*icon缩放动画*/
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    70% {
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
+
+/*缩放*/
+@keyframes download_bg_scale {
+    0% {
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+
+
+    100% {
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+    }
+}
+
+.download_bg_scale {
+    -webkit-animation: download_bg_scale 10s linear infinite;
+    animation: download_bg_scale 10s linear infinite;
+}
+
+
+/*不同型号产品展示动画*/
+@keyframes banner01 {
+    0% {
+        display: block;
+    }
+
+    40% {
+        display: none;
+    }
+
+    80% {
+        display: none;
+    }
+
+    100% {
+        display: block;
+    }
+}
+
+.banner01 {
+    -webkit-animation: banner01 10s linear infinite;
+    animation:banner01 10s linear infinite;
+}
+
+@keyframes banner02 {
+    0% {
+        display: none;
+    }
+
+    40% {
+        display: block;
+    }
+
+    80% {
+        display: none;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+.banner02 {
+    -webkit-animation: banner01 10s linear infinite;
+    animation:banner01 10s linear infinite;
+}
+
+@keyframes banner03 {
+    0% {
+        display: none;
+    }
+
+    40% {
+        display: none;
+    }
+
+    80% {
+        display: block;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+.banner03 {
+    -webkit-animation: banner01 10s linear infinite;
+    animation:banner01 10s linear infinite;
+}
+

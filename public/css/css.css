@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* 样式还原 */
+html{font-size: 12px;}
+body{font-family: "微软雅黑", "宋体", Arial;}
+body,p,ul,li,h1,h2,h3{margin:0px;padding:0px;}
+ul,li,ol{list-style: none;}
+a{text-decoration: none;}
+a img{border: 0px;}
+img{vertical-align: middle;}
+
+
+/* 固定顶部导航 */
+header{color: #FFFFFF;height:90px;position: fixed;top: 0px;width: 100%;background: rgba(42,52,72,1);z-index: 99;}
+header>div.welcome{position: absolute;padding: 5px 20px;top: 0px;right: 0px;color: #D87900;}
+header>div.welcome span{color:#0198E5;}
+header>div.welcome a{color:#666;}
+header>div.welcome a:hover{color:#CCC;}
+
+nav{max-width: 1200px;width: 100%;margin: auto;height: 90px;transition: all 1.5s;}
+.header{animation: header 1.5s}
+
+@keyframes header{
+	0%{top:-90px;}
+	100%{top: 0px;}
+}
+
+
+
+/* top动画 */
+@keyframes play_top{
+0%{background: rgba(42,52,72,0.5);}
+100%{background: rgba(42,52,72,1);}
+}
+header{animation: play_top 2S;}
+
+
+
+
+nav .logo{float:left;padding-top:40px;padding-left: 1.5rem;}
+nav a{color: #FFF;font-size: 1.25rem;}
+nav a:hover{color: #0198E5;}
+nav span{font-size: 1rem;}
+nav ul{float: right;padding-top: 30px;height: 60px;overflow: hidden;}
+nav ul:after{content: "";display: block;clear: both;}
+nav li{float:left;padding: 1rem 2rem;text-align: center;}
+/* LOGO动画 */
+@keyframes play_logo{
+0%{opacity:0;padding-left: 0rem;}
+100%{opacity:1;padding-left: 1.5rem;}
+}
+nav .logo{animation: play_logo 2S;}
+
+
+/* 移动端导航 */
+.nav_moer{float: right;cursor: pointer;}
+#phone_nav div{width: 90%;margin: auto;line-height: 40px;text-align: center;padding: 5%;clear: both;background: rgba(0,0,0,0.5);}
+#phone_nav div a{display: block;border-radius: 0.25rem;background: #0F7DB6;color:#FFF; margin: 3px auto;}
+#phone_nav div a:hover{background: #0198E5;clear: both;color: #FFF;}
+
+/*banner*/
+.banner{background:url(../image/banner.jpg) no-repeat center top;background-size: cover;width: 100%;height: 360px;clear: both;color:#FFF;padding: 8% 10%;overflow: hidden; box-sizing:border-box;}/*box-sizing:border-box;容器宽高值包括边框，边距*/
+.banner h1,.banner div,.banner p{width: 100%;text-align: center;margin: auto;}
+.banner h1{font-size: 4rem;font-weight: normal;padding-top: 60px;}/*font-weight: normal;字体不加粗*/
+.banner h1 span{color:#0198E5;}
+
+/*banner里 h1的动画*/
+@keyframes play_h1{
+0%{opacity:0;padding-top: 70px;}
+100%{opacity:1;padding-top: 60px;}
+}
+.banner h1{animation: play_h1 2S;}
+
+
+/*foot*/
+footer{text-align: center;clear: both;line-height: 2rem;background: #050E13;color: #444;font-size: 1.25rem;padding: 10px;overflow: hidden;}
+
+@keyframes play_foot_img{
+0%{opacity:0;}
+100%{opacity:1;}
+}
+footer img{animation: play_foot_img 2S;}
+
+@keyframes play_foot_p{
+0%{opacity:0;padding-top: 20px}
+100%{opacity:1;margin-bottom: 0px}
+}
+footer p{animation: play_foot_p 1S;}
+
+
+
+
+
+
+
+
+
+/*pc*/
+@media screen and (min-width:992px){
+#phone_nav,.nav_moer{display:none}
+	
+	
+	
+	
+	
+	
+	
+	
+}
+/*pad*/
+@media screen and (max-width:991px){
+	
+#phone_nav,nav span,.nav_moer{display: none;}
+header h1{font-size: 4rem;}
+
+
+
+
+
+
+
+
+}
+
+/*phone*/
+@media screen and (max-width:767px){
+	
+nav ul{display: none;}
+#phone_nav,.nav_moer{display: block}
+.banner h1{font-size: 2.5rem;padding-top: 80px;}
+@keyframes up10{
+0%{opacity:0;padding-top: 90px;}
+100%{opacity:1;padding-top: 80px;}
+}
+.banner h1{animation: up10 2S;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

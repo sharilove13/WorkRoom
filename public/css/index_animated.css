@@ -1,0 +1,115 @@
+
+/*--------------------START------滚动-动画--------------------*/
+
+/*动画类型*/
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    70% {
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/*动画对象*/
+#feature_classes i.onscroll_animation{
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+/*----------------------END----滚动-动画--------------------*/
+
+/*----------------------START----固定-动画--------------------*/
+/*不同型号产品展示动画*/
+@keyframes banner01 {
+    0% {
+        display: block;
+    }
+
+    40% {
+        display: none;
+    }
+
+    80% {
+        display: none;
+    }
+
+    100% {
+        display: block;
+    }
+}
+
+.banner01 {
+    -webkit-animation: banner01 10s linear infinite;
+    animation:banner01 10s linear infinite;
+}
+
+@keyframes banner02 {
+    0% {
+        display: none;
+    }
+
+    40% {
+        display: block;
+    }
+
+    80% {
+        display: none;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+.banner02 {
+    -webkit-animation: banner01 10s linear infinite;
+    animation:banner01 10s linear infinite;
+}
+
+@keyframes banner03 {
+    0% {
+        display: none;
+    }
+
+    40% {
+        display: none;
+    }
+
+    80% {
+        display: block;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+.banner03 {
+    -webkit-animation: banner01 10s linear infinite;
+    animation:banner01 10s linear infinite;
+}
+/*----------------------END----固定-动画--------------------*/

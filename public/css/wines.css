@@ -1,0 +1,82 @@
+h4, h5, h6,
+h1, h2, h3 {margin-top: 0; font-family: 'RopaSans-Regular';}
+ul, ol {margin: 0;padding:0;}
+p {margin: 0;}
+html, body{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    background:#fff;
+}
+.header{
+    background:#eae089;
+    background-size: cover;
+    position: relative;
+    padding:1.5em 0
+}
+.logo{
+    float:left;
+    width:24%
+}
+.logo>h1{
+    margin:0;
+    font-size:30px;
+}
+.logo>h1>a{
+    color: #8E0000;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 0 auto;
+}
+nav>ul>li>a:hover{
+    color: #8E0000;
+    background-color: #EAE089;
+    border-bottom: 2px solid #8E0000;
+    text-decoration:none
+}
+.active>a{
+    color: #8E0000;
+    background-color: #EAE089;
+    border-bottom: 2px solid #8E0000;
+}
+nav{
+    float:left;
+    width:66%
+}
+nav>ul>li>a{
+    line-height:20px;
+    color: #000;
+    font-size: 1.1em;
+    font-weight: 400;
+    position: relative;
+    display: block;
+    padding: 10px 4px ! important;
+    margin: 0 20px;
+}
+.facilities{
+    padding:80px 0
+}
+.facilities h2{
+    font-size: 3em;
+    text-transform: capitalize;
+    color: #8E0000;
+    text-align: center;
+    margin: 0 0 1.5em;
+}
+.view {
+    width: 31.5%;
+    height: 100%;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+    -moz-box-shadow: 1px 1px 2px #e6e6e6;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+}
+.view.view-seventh img {
+    width: 100%;
+}

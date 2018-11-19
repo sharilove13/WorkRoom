@@ -1,0 +1,103 @@
+.header h1{color: dodgerblue;font-weight: bold;}
+
+.tab_logo{ width:50%;margin-top:20px}
+.tab_nav{
+    width:100%;
+    margin-top:20px;
+	border-bottom: 3px solid #CCC;
+	padding-bottom: 10px;
+	
+}
+.tab_nav ul li{
+    text-align:center;
+    padding:0 10px;
+    background:transparent;
+}
+
+.tab_nav ul li a{
+    display:block;
+    text-decoration:none;
+    font-size:16px;
+    line-height:36px;
+    color:#000000;
+    font-weight:bold;
+   text-align:center
+}
+.active{
+    color:#fff !important;
+    text-decoration:none;
+    background:#000;
+    border-radius:8px;
+}
+.tab_nav ul li a:hover{
+    color:#fff;
+    text-decoration:none;
+    background:#000;
+    border-radius:8px;
+	cursor: pointer;
+	
+}
+.products>a{
+display:inline-block
+}
+.products{padding:30px;box-sizing: border-box;margin: auto;display: flex;flex-wrap: wrap;width: 100%;max-width: 1200px;text-align: center;}
+.products>a{flex: 1;margin: 10px;height: 200px;overflow: hidden;min-width: 300px;border: 3px solid #587FA8;position: relative;color: #FFF;background: #2C4054;}
+.products>a>div:nth-child(1)>img{width:100%;}
+.products>a>div:nth-child(1){width:100%;position: absolute;top: 0px;right: 0px;transition: all 1s;}
+.products>a:hover>div:nth-child(1){width:50%;}
+
+.products>a>div:nth-child(2){box-sizing: border-box;padding: 20px;position: absolute;top: 0px;left: 50px;height: 200px;width: 50%; text-align:center;opacity: 0;transition: all 1s;}
+.products>a>div:nth-child(2)>h1{font-size: 26px;padding-bottom: 20px;}
+.products>a>div:nth-child(2)>h2{font-size: 12px;padding-bottom: 10px;}
+.products>a>div:nth-child(2)>p{font-size: 14px;}
+.products>a>div:nth-child(2) span{color: #FF9900;}
+.products>a:hover>div:nth-child(2){left: 0px;opacity: 1}
+
+.row{padding:15px 0}
+.proitem{padding:0px 5px;}
+
+
+
+
+.btn{
+    font-size: 20px;
+    padding: 15px 120px;
+    color:#fff;
+    margin-top: 89px;
+    background:dodgerblue;
+    border-radius:8px;
+	margin: auto;
+}
+.footer{
+    padding:40px 0
+}
+.footer_center{
+    margin-top:40px;
+
+}
+form{
+    font-weight:bold;
+    display:flex;
+    justify-content:center;
+}
+
+
+.btn2{
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 100px;
+    color:#000;
+    font-weight:bold;
+    margin-top: 49px;
+    background:transparent;
+    border:1px solid darkgray;
+}
+.sel2{
+    display:flex;
+    justify-content: space-between;
+}
+.btn2:hover{
+    text-decoration:none;
+    background:dodgerblue;
+    color:#fff
+}

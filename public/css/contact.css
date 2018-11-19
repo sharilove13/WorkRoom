@@ -1,0 +1,97 @@
+.cen{margin: auto;max-width: 1100px;padding: 50px;line-height:30px;color: #666;font-size: 16px;}
+.cen h1{font-size: 30px;line-height: 50px;color: #333;padding-top: 25px;font-weight:normal;}
+#middle-top{
+	padding-top: 120px;
+	text-align: center;
+	font-size: 30px;
+	color: #333333;
+	line-height: 50px;
+}
+#middle-left{
+	float:left;
+	width: 30%;
+	min-width: 200px;
+}
+#middle-right{
+	float:right;
+	width: 60%;
+	min-width: 300px;
+}
+#middle-right input{
+	width:50%;
+	height:30px;
+	line-height: 30px;
+	border-radius:20px;
+	background:#F0F0F0;
+	border: 0px;
+	padding: 5px 15px;
+	margin: 5px 0px;
+}
+#middle-right textarea{
+	width:100%;
+	border-radius:15px;
+	background:#F4F4F4;
+	margin:5px 0;
+	padding: 15px;
+	border: 0px;
+}
+#middle-left2{
+	float:left;
+	width: 50%;
+	padding-top: 30px;
+	min-width: 300px;
+}
+#middle-left2 h1{display: inline;}
+#middle-right2{
+	float:right;
+	width: 50%;
+	text-align: right;
+	padding-top: 30px;
+	min-width: 300px;
+}
+.hr{width: 100%;border-bottom: 1px solid #CCC;}
+#bottom{text-align:center;padding-top:50px;}
+#bottom h1{padding-bottom: 30px;}
+#bottom_1{display: flex;flex-wrap: wrap;max-width: 1000px;margin: auto;}
+#bottom_1 div{flex:1;flex-wrap: wrap;box-sizing: border-box;background: #F0F0F0;margin: 20px;}
+#bottom_1 img{width: 100%;min-width: 120px;}
+#bottom h1{font-size: 30px;color: #333;}
+#bottom2{
+	padding:25px;text-align: center;font-size:30px;max-width: 1100px;margin: auto;display: flex;flex-wrap: wrap;
+}
+
+
+
+#bottom2 p{
+	flex: 1;
+	text-align: center;
+	padding: 25px;
+	box-sizing: border-box;
+}
+#bottom2 input{
+	width:70%;
+	height:50px;
+	line-height: 50px;
+	border-radius:5px;
+	background:#0198E5;
+	color:#fff;
+}
+
+/*phone*/
+@media screen and (max-width:767px){
+	
+	
+	#middle-top{font-size: 24px;}
+	#middle-left,#middle-right,#middle-left2,#middle-right2{text-align: center;width: 100%;}
+	#middle-left2{display: none;}
+	#middle-right input,#middle-right textarea{width: 90%;}
+	#middle-right2 h1{font-size: 30px;}
+	#bottom2{font-size:20px;}
+	#bottom2 p{	padding: 25px 0px;}
+
+	.cen{line-height:40px;color: #666;font-size: 30px;padding: 50px 0px;}
+	.cen h1{font-size: 40px;line-height:60px;}
+}	
+
+
+
