@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.bant-1{
+    background-image: url(../images/reg_bg.jpg);
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+.bant-2 {
+    margin-left: 15rem;
+    margin-top: 20px;
+}
+.bant-2 a{
+    color: #0198E5;
+    text-decoration: none;
+    font-size: 30px;
+}
+.bant-3 a{
+    color: orangered;
+    float: right;
+    font-size: 14px;
+    padding-right: 30px;
+}
+#tgba{
+    background-color:rgb(240,240,240);
+    width: 270px;
+    height: 650px;
+}
+.admin_left{
+    background-color: #302F33 !important;
+}
+.bbt a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.bbt{
+    margin-top: 50px;
+    margin-left: 4rem;
+    border-bottom: 1px solid #ddd;
+}
+.marg-1 p{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+#tgbn hr{
+    margin-top: -25px;
+    background-color: rgb(240,240,240);
+}
+.marg-1 input{
+    float: right;
+    margin-top: -50px;
+    margin-right: 50px;
+    width: 350px;
+    height:30px;
+    font-size: 14px;
+}
+.marg-1 a img{
+margin-left: 70rem;
+margin-top: -6rem;
+position: relative;
+}
+.pgd{
+margin-bottom: -19px;
+display: block;
+}
+
+.dnf-1{
+    float: left;
+    margin-left: 7rem;
+    margin-top: 0rem;
+    font-size: 15px;
+}
+#tgbn .tgg{
+ margin-top: 2rem;
+}
+.dnf-2 p{
+    float: left;
+    margin-left: 7rem;
+    margin-top: 0rem;
+    font-size:12px;
+}
+.dnf-2 .tgb-2{
+    margin-left:120px;
+}
+.dnf-2 .tgb-2 a{
+    text-decoration: none;
+}

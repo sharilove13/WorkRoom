@@ -9,7 +9,7 @@ $(function(){
 			var html="";
 			for(var i=0;i<res.length;i++){
 				var {p_name,over_time,s_price,img_src,p_href,p_content}=res[i];
-				html+=` <a href="${p_href}">
+				html+=` <a href="${p_href}" target="_blank">
 						<div><img src="${img_src}"></div>
 						<div>
 							<h1>${p_name}</h1>

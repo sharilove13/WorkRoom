@@ -16,7 +16,11 @@ $(function(){
                
                 var html="";
                 for(var sp of specs){
-                    html+=`<a href="details.html?ca_id=${sp.ca_id}" class="my_format text-muted">${sp.classify_a}</a>`;
+					if(sp.ca_id == ca_id){
+						html+=`<a href="details.html?ca_id=${sp.ca_id}" class="my_format text-muted my_active">${sp.classify_a}</a>`;
+					}else{
+						html+=`<a href="details.html?ca_id=${sp.ca_id}" class="my_format text-muted">${sp.classify_a}</a>`;
+					}
                 }
                 
                 $("#DETAILS_SPEC").html(html);

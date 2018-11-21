@@ -23,6 +23,32 @@
     <body>
 		<!--浮动头部-->
 		<header>
+			<div class="welcome" id="HAS_LOGINED"><span></span>：欢迎登录 <a href="" style="cursor:pointer;">退出</a></div>
+			<nav>
+				<!--左上角logo-->
+				<img src="images/index/logo2.png" class="logo"/>
+				<!--移动端导航显示-->
+				<a href="#" class="nav_moer"  onclick="show(phone_nav)"><img src="images/index/nav_moer.png"></a>
+				<!--PC导航-->
+				<ul>
+					<li><a href="index.html">首页<br>
+						<span>Home</span></a></li>
+					<li><a href="about.html">关于我们<br>
+						<span>About Us</span></a></li>
+					<li><a href="case.html">案例展示<br>
+						<span>Case Study</span></a></li>
+					<li><a href="pro.html">产品介绍<br>
+						<span>Product </span></a></li>
+					<li><a href="contact.html">联系我们<br>
+						<span>Contact Us</span></a></li>
+					<li><a href="guide.html">简化版<br>
+						<span>Guide</span></a></li>
+				</ul>
+			</nav>
+			<!--移动导航分类-->
+			<nav id="phone_nav" style="display: none;">
+				<div> <a href="index.html">首页</a> <a href="about.html">关于我们</a> <a href="case.html">案例展示</a> <a href="pro.html">产品介绍</a> <a href="contact.html">联系我们</a> <a href="guide.html">简化版</a></div>
+			  </nav>
 		</header>
 		<!--头部浮动内容-->
 		<div class="banner">
@@ -375,9 +401,9 @@
 		                    	<img src="images/index/trusted/img-1.jpg" alt="Image-1">
 		                    </div>
 		                    <div class="text-desc">
-		                    	<h3>橙小橙</h3>
-		                        <p>橙小橙是国内专业的原装进口化妆品B2B采购平台，通过直供、团采等方式，以优势价格为零售店提供手续费。</p>
-		                    	<a href="#" class="btn">前去官网</a>
+		                    	<h3>松一玩具</h3>
+		                        <p>松一玩具是广东省玩具协会旗下中国玩具行业访问量最大的门户网站,多媒介提供玩具资讯新闻、品牌招商、批发采购和产业大数据服务,已成为泛玩具业领先网络传媒。</p>
+		                    	<a href="https://www.ctoy.com.cn/" class="btn">前去官网</a>
 		                    </div>
 		                </div>
 		            </li>
@@ -399,20 +425,22 @@
 		                    	<img src="images/index/trusted/img-3.jpg" alt="Image-3">
 		                    </div>
 		                    <div class="text-desc">
-		                    	<h3>橙小橙</h3>
-		                        <p>橙小橙是国内专业的原装进口化妆品B2B采购平台，通过直供、团采等方式，以优势价格为零售店提供手续费。</p>
-		                    	<a href="#" class="btn">前去官网</a>
+		                    	<h3>融创名睿</h3>
+		                        <p>融创以“至臻，致远”为品牌理念，致力于通过高品质、多元的产品与服务，整合高端居住、文旅文娱、商业配套等资源，为中国家庭提供美好生活的完整解决方案。</p>
+		                    	<a href="http://www.sunac.com.cn/" class="btn">前去官网</a>
 		                    </div>
 		                </div>
 		            </li>
 		        </ul>
 			</div>
 		</div>
-		<footer></footer>
+		<footer>
+			<img src="image/logo2.png" />
+			<p>Copyright &copy; 2018.Company name All rights reserved.</p>
+		</footer>
 		<script src="js/display.js"></script>
 		<script src="js/index.js"></script>
 		<script src="js/pager.js"></script>
-		<script src="js/header.js"></script>
 		<script>
 			window.onscroll=function(){  //绑定滚动条动作事件
 				toTop_an($("#feature_classes i"))

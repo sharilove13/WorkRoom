@@ -7,10 +7,54 @@
 <link href="css/css.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/contact.css">
 <script src="js/jquery-3.2.1.js"></script>
+<style>
+	#bottom2 a{
+		display:block;
+		width:200px;
+		height:40px;
+		background:#0198E5;
+		color:#fff;
+		font-size:20px;
+		border-radius:25px;
+		padding-top:15px;
+		margin-left:150px;
+	}
+	#middle-right button{
+		width:200px;
+		height:40px;
+		background:#0198E5;
+		color:#fff;
+		font-size:20px;
+		border-radius:25px;
+		margin-left:150px;
+		cursor:pointer;
+	}
+	input{outline:none;}
+	textarea{outline:none;}
+</style>
 </head>
 
 <body>
-<header></header>
+<header>
+	<div class="welcome" id="HAS_LOGINED"><span></span>：欢迎登录 <a href="" style="cursor:pointer;">退出</a></div>
+  <nav> <img src="image/logo2.png" class="logo"/> <a href="#" class="nav_moer"  onclick="show(phone_nav)"><img src="image/nav_moer.png"></a>
+    <ul>
+      <li><a href="index.html">首页<br>
+        <span>Home</span></a></li>
+      <li><a href="about.html">关于我们<br>
+        <span>About Us</span></a></li>
+      <li><a href="case.html">案例展示<br>
+        <span>Case Study</span></a></li>
+      <li><a href="pro.html">产品介绍<br>
+        <span>Product </span></a></li>
+      <li><a href="contact.html">联系我们<br>
+        <span>Contact Us</span></a></li>
+    </ul>
+  </nav>
+  <nav id="phone_nav" style="display: none;">
+    <div> <a href="#">首页</a> <a href="#">关于我们</a> <a href="#">案例展示</a> <a href="#">产品介绍</a> <a href="#">联系我们</a> </div>
+  </nav>
+</header>
 <div class="banner">
   <h1>为您的企业找到<span>最好的</span>网站建设解决方案</h1>
 </div>
@@ -33,24 +77,24 @@
       <p>421.909.123.456</p>
     </div>
   </div>
-  <div id="middle-right">
+  <form id="middle-right">
     <h1>朋友您好！</h1>
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Website">
-    <input type="email" placeholder="Email">
-    <input type="text" placeholder="phone">
-    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-  </div>
+    <input type="text" placeholder="姓名">
+    <input type="email" placeholder="邮箱">
+    <input type="text" placeholder="电话">
+    <textarea name="" id="" cols="30" rows="10" placeholder="请留下您想说的话"></textarea>
+	<button>提交</button>
+  </form>
   <div id="middle-left2"> <span>.</span>
-    <h1>1029·永远不倒</h1>
+    <h1>舍其·永远不倒</h1>
     <div>
-      <p>1029工作室是杭州最专业之一的全栈性工作室。集合了各个领域的优秀人才，生活不息-进步不止。</p>
+      <p>舍其工作室是杭州最专业之一的全栈性工作室。集合了各个领域的优秀人才，生活不息-进步不止。</p>
     </div>
   </div>
   <div id="middle-right2">
     <h5>专业使我们强大</h5>
     <h3>421.909.123.456</h3>
-    <h1>1029@163.com</h1>
+    <h1>sheqiwork@163.com</h1>
   </div>
   <div style="clear: both;"></div>
 </div>
@@ -67,12 +111,13 @@
 </div>
 <div id="bottom2">
   <p>成为我们的合作伙伴</p>
-  <p><input type="submit" value="注册会员"></p>
+  <p><a href="reg.html">注册会员</a></p>
 </div>
 </div>
-<footer></footer>
+<footer>
+	<img src="image/logo2.png" />
+	<p>Copyright &copy; 2018.Company name All rights reserved.</p>
+</footer>
 <script src="js/display.js"></script>
-<script src="js/header.js"></script>
-
 </body>
 </html>
