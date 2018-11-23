@@ -1,4 +1,6 @@
 window.onload=function() {
+	
+	
     var slider1=document.getElementById("slider1");
     var slider1Btn=document.getElementById("slider1Btn");
     var serverImg=document.getElementById("serverImg");

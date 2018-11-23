@@ -179,7 +179,7 @@ transform: rotate(45deg);
 .logo .l_4{width:6px;height:22px;left:22px;top:28px;}
 .nav{float:right;height:100%;overflow:hidden;line-height:70px;}
 .nav li{display:inline-block;height:100%;}
-.nav li a{color:#848484;display:block;height:68px;border-bottom:2px solid #323436;padding:0 40px;}
+.nav li a{color:#848484;display:block;height:68px;border-bottom:2px solid #323436;padding:0 20px;}
 .nav li a:hover{color:#42b8f1;}
 .nav .active a{border-bottom:2px solid #42b8f1;color:#42b8f1;background:#212325;}
 
@@ -447,7 +447,14 @@ transform: translate(0px,-800px);
 -ms-transform: translate(0px,-800px);
 }
 
-.icon_txt{display:block;width:170px;margin-top:40px;opacity:0;}
+
+.f3{font-size:64px;}
+.f5{font-size:52px;}
+.icon_txt{display:block;width:170px;height:100px;font-weight:600;margin-top:20px;opacity:0;}
+.icon_txt1{color:#24B7DD;margin-top:35px;}
+.icon_txt2{color:#FEB628;}
+.icon_txt3{color:#E6363A;}
+.icon_txt4{color:#00C29A;}
 .icon_cell_1 .icon_txt{background-position:center -211px;height:39px;
 transform: translate(0px,800px);
 -moz-transform: translate(0px,800px);

@@ -6,14 +6,21 @@ $(function(){
 		success:function(res){	
 			//console.log(res);
 				
-			var html="";
+			var html=`<a href="http://localhost:4000/index.html" target="_blank">
+						<div><img src="./images/pro/pro0.png"></div>
+						<div>
+							<h1>苏宁易购商城</h1>
+							<h2>2018-11-1<span>￥15000</span></h2>
+							<p>这是一个仿制苏宁易购的商城样式</p>
+						</div>
+					</a>`;
 			for(var i=0;i<res.length;i++){
 				var {p_name,over_time,s_price,img_src,p_href,p_content}=res[i];
 				html+=` <a href="${p_href}" target="_blank">
 						<div><img src="${img_src}"></div>
 						<div>
 							<h1>${p_name}</h1>
-							<h2>${over_time}<span>￥:${s_price}</span></h2>
+							<h2>${over_time}<span>￥${s_price}</span></h2>
 							<p>${p_content}</p>
 						</div>
 					</a>`;//删除html中57~65行
@@ -80,5 +87,5 @@ $(function(){
 				}
 			})
 		}
-	})
+	});
 })
